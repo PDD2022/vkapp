@@ -1,1 +1,32 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#000000"><meta content="IE=Edge" http-equiv="X-UA-Compatible"><title>VK App Boilerplate</title><link href="https://pdd.juice.vk-apps.com/react/build/static/css/main.2b39c25c.css" rel="stylesheet"></head><body><div id="root"></div><script type="text/javascript" src="https://pdd.juice.vk-apps.com/react/build/static/js/main.865c8e68.js"></script></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>chat</title>
+<meta name="viewport" content="width=device-width">
+	
+<script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+
+<script>
+  // Sends event to client
+  vkBridge.send('VKWebAppInit');
+</script>
+<style>
+#ifr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    height: 100%;
+
+    width: 100%;
+    background-color: #f8f8f8;
+}
+</style>
+</head>
+<body>	
+<iframe id="ifr" src="https://pdd.juice.vk-apps.com/"></iframe>
+	
+<!-- Yandex.Metrika counter -->
+</body>
+</html>
